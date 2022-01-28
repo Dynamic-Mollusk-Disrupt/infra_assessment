@@ -1,6 +1,3 @@
-# infra_assessment
-An assessment for potential infrastructure engineers.
-
 # FWA Devops Coding Challenge
 
 Infrastructure Coding Test
@@ -8,11 +5,12 @@ Infrastructure Coding Test
 
 # Goal
 
-Script the creation of a web server, and a script to check the server is up.
+Script the creation of a web server, and a script to check the server is up.  Please timebox this assessment to no more than 3-4 hours.  If there are portions you are not able to complete in the timeframe, feel free to describe in a file what steps you would take.
 
 # Prerequisites
 
-You will need an account at an AWS account. Create one if you don't own one already. You can use free-tier resources for this test.
+* You will need an account at an AWS account. Create one if you don't own one already. You can use free-tier resources for this test.
+* You will also need a Github account.
 
 # The Task
 
@@ -20,19 +18,16 @@ You are required to set up a new server in AWS. It must:
 
 * Be publicly accessible.
 * Run Nginx or your webserver of choice - something to serve up content
-* Deploy the content. This can be as simple as a "Hello World", for example:
+* Deploy the content. This can be as simple as a "Hello World", or as complex as a full website. 
 
-```
-Hello World
-```
-
-or as complex as a full website. You choose. We will not provide the content. 
+You choose. We will not provide the content. 
 
 # Mandatory Work
 
 Fork this repository.
 
-* Provide instructions on how to create the server
+* Utilizing Infrastructure as Code, create the server.
+* Provide instructions (or a deployment pipeline preferably) to deploy the content to the server.
 * Provide Instructions on deploying the content
 * Provide a script that can be run periodically (and externally) to check if the server is up and serving the expected content (version number or returning a 200 status code). Use your scripting language of choice.
 * Alter the README to contain the steps required to:
@@ -50,7 +45,7 @@ Give us access to your fork, and send us an email when you’re done. Feel free 
 
 We know time is precious, we won't mark you down for not doing the extra credits, but if you want to give them a go...
 
-* Automate the server setup using a CloudFormation template. Document what is happening in the template
+* Automate the server setup using Terraform.  Document what is happening in the code.
 * Use a configuration management tool (such as Puppet, Chef or Ansible) to bootstrap the server. Document what is happening in your definition files
 * Put the server behind a load balancer. Automate this if possible using any tools you are familiar with and document what is going on
 * Make the checker script SSH into the instance, check if Nginx is running and start it if it isn't.
@@ -76,7 +71,7 @@ Hint: we would like to be able to test this outside of the environment you creat
 #### Will I have a chance to explain my choices?
 
 Feel free to comment your code, or ideally put explanations in a pull request within the repo in one or more readme files
-We’ll discuss the choices you made at interview.
+We’ll discuss the choices you made at a follow up interview.
 
 #### Why doesn't the test include X?
 
