@@ -1,4 +1,4 @@
-# FWA Devops Coding Challenge
+# GROUNDFLOOR Devops Coding Challenge
 
 Infrastructure Coding Test
 ==========================
